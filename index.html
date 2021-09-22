@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Grid: 4 Col 4 Row</title>
+    <style>
+      .grid {
+        display: grid;
+        grid-template-rows: 100px 100px 100px 100px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 4px;
+        height: 100%;
+        color: #fff;
+        text-align: center;
+      }
+      .txt-center {
+        align-items: center;
+        justify-content: center;
+        display: grid;
+      }
+
+      .item-0 {
+        background-color: #00bffe;
+        grid-row-start: 1;
+        grid-column-start: 1;
+        grid-row-end: 2;
+        grid-column-end: 2;
+      }
+      .item-1 {
+        background-color: #00bffe;
+        grid-row-start: 1;
+        grid-column-start: 2;
+        grid-row-end: 2;
+        grid-column-end: 3;
+      }
+      .item-2 {
+        background-color: #00bffe;
+        grid-row-start: 1;
+        grid-column-start: 3;
+
+        grid-row-end: 2;
+        grid-column-end: 4;
+      }
+      .item-3 {
+        background-color: #00bffe;
+        grid-row-start: 1;
+        grid-column-start: 4;
+
+        grid-row-end: 2;
+        grid-column-end: 5;
+      }
+      .item-4 {
+        background-color: #ff4500;
+        grid-row-start: 2;
+        grid-column-start: 1;
+
+        grid-row-end: 3;
+        grid-column-end: 2;
+      }
+      .item-5 {
+        background-color: #4169e2;
+        grid-row-start: 2;
+        grid-column-start: 2;
+
+        grid-row-end: 3;
+        grid-column-end: 5;
+      }
+      .item-6 {
+        background-color: #8a2be1;
+        grid-row-start: 3;
+        grid-column-start: 1;
+
+        grid-row-end: 4;
+        grid-column-end: 2;
+      }
+      .item-7 {
+        background-color: #fed700;
+        grid-row-start: 3;
+        grid-column-start: 2;
+
+        grid-row-end: 5;
+        grid-column-end: 3;
+      }
+      .item-8 {
+        background-color: #ff7f50;
+        grid-row-start: 3;
+        grid-column-start: 3;
+
+        grid-row-end: 5;
+        grid-column-end: 5;
+      }
+      .item-9 {
+        background-color: #20b1aa;
+        grid-row-start: 4;
+        grid-column-start: 1;
+
+        grid-row-end: 5;
+        grid-column-end: 2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid">
+      <div class="item-0 txt-center">Col 1</div>
+      <div class="item-1 txt-center">Col 2</div>
+      <div class="item-2 txt-center">Col 3</div>
+      <div class="item-3 txt-center">col 4</div>
+      <div class="item-4 txt-center">Row 2</div>
+      <div class="item-5 txt-center">3x1 Col</div>
+      <div class="item-6 txt-center">Row 3</div>
+      <div class="item-7 txt-center">1x2 Col</div>
+      <div class="item-8 txt-center">2x2 col</div>
+      <div class="item-9 txt-center">Row 4</div>
+    </div>
+  </body>
+</html>
